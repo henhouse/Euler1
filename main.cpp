@@ -12,13 +12,17 @@ using namespace std;
 int main(int argc, char** argv)
 {
     int sum = 0;
+    int n = 0;
 
-    for (int i = 1; i < 1000; i++)
+    cout << "Please enter a number below to compute the sum of all multiples of 3 and 5 below your specified number:" << endl;
+    cin >> n;
+
+    for (int i = 1; i < n; i++)
     {
         if ((i % 3 == 0) || (i % 5 == 0))
             sum += i;
     }
-    std::cout << "sum of all multiples of 3 and 5 below 1000: ";
+    std::cout << "sum of all multiples of 3 and 5 below " << n << ": ";
     std::cout << sum;
 
     return 0;
